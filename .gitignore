@@ -1,0 +1,9 @@
+# Ignore folder named "vendor"
+vendor/
+
+# Ignore file named "DS_Store"
+.DS_Store
+
+# Ignore folder named "idea"
+.idea/
+
