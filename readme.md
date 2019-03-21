@@ -1,16 +1,16 @@
 # Pirmas PHP namų darbas
 
 
-##Klausimai
+## Klausimai
 1. Kodėl  "Nfq\Akademija\Soft\calculateHomeWorkSum(3, 2.2, ‘1’)" yra 6?
 
 2. Kas ir kodėl nutiko bandant kviesti:  "Nfq\Akademija\Strict\calculateHomeWorkSum(3, 2.2, ‘1’)"?
 
-#####Atsakymai:
+##### Atsakymai:
 1.
 2.
 
-##Papildomas kalusimas iš Loose comparison
+## Papildomas kalusimas iš Loose comparison
 Paaiškinti kodėl:
 ```
 var_dump('php' == 0)
@@ -23,9 +23,9 @@ var_dump(null == 'php')
 #bool(false)
 ```
 
-####Atsakymai
+#### Atsakymai
 
-#####Kodėl var_dump('php' == 0) yra true:
+##### Kodėl var_dump('php' == 0) yra true:
 Php lygindamas int su string, string konvertuojamas į int:
 
 >"If you compare a number with a string or the comparison involves numerical strings, then each string is converted to a number and the comparison performed numerically. "   
@@ -47,7 +47,7 @@ var_dump(0 == 0)
 #bool(true)
 ```
 
-#####Kodėl var_dump(0 == null) yra true:
+##### Kodėl var_dump(0 == null) yra true:
 Jei pirmas operandas yra null, o antras bet kas (šiuo atveju - skaičius), tuomet abi pusės konvertuojamos į bool:
 >Operand 1: bool or null     
 Operand 2:	anything    	
@@ -71,7 +71,7 @@ var_dump(false == false)
 #bool(false)
 ```
 
-#####Kodėl var_dump(null == 'php') yra false:
+##### Kodėl var_dump(null == 'php') yra false:
 Jei vienas iš operandų yra null, o kitas string, null konvertuojamas į "":
 >Operand 1: null or string   
 Operand 2:	string	   
