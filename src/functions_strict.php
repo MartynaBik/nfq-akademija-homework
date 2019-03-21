@@ -1,22 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Nfq\Akademija\Strict
-{
-    function calculateHomeWorkSum(int...$numbers):int
-        {
-            $sum = null;
+namespace Nfq\Akademija\Strict {
 
-            foreach ($numbers as $key => $el) {
-                $sum += $el;
-            }
-            return $sum;
+    function calculateHomeWorkSum(int...$numbers): int
+    {
+        $sum = null;
 
+        foreach ($numbers as $key => $el) {
+            $sum += $el;
         }
 
+        return $sum;
+    }
 }
-
-
-
-
-

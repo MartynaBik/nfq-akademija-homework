@@ -1,6 +1,7 @@
 <?php
-namespace
-{
+
+namespace {
+
     function calculateHomeWorkSum(...$numbers)
     {
         $sum = null;
@@ -8,28 +9,14 @@ namespace
         foreach ($numbers as $key => $el) {
             $sum += $el;
         }
-        return $sum;
 
+        return $sum;
     }
 }
 
-namespace Nfq\Akademija\Not_Typed
-{
-    function calculateHomeWorkSum(...$numbers):int
-    {
-        $sum = null;
+namespace Nfq\Akademija\Not_Typed {
 
-        foreach ($numbers as $key => $el) {
-            $sum += $el;
-        }
-        return $sum;
-
-    }
-}
-
-namespace Nfq\Akademija\Soft
-{
-    function calculateHomeWorkSum(int...$numbers):int
+    function calculateHomeWorkSum(...$numbers): int
     {
         $sum = null;
 
@@ -41,10 +28,16 @@ namespace Nfq\Akademija\Soft
     }
 }
 
+namespace Nfq\Akademija\Soft {
 
+    function calculateHomeWorkSum(int...$numbers): int
+    {
+        $sum = null;
 
+        foreach ($numbers as $key => $el) {
+            $sum += $el;
+        }
 
-
-
-
-
+        return $sum;
+    }
+}

@@ -26,7 +26,7 @@ Taigi:
  ```    
  Funkcija grąžina int, o suma ganama 3 + 2 + 1 = 6.     
     <br />
-2\. Nurodyta funkcija turi apibrėžimą "strict_type = 1", todėl ją kviečiant turėtų būti metama klaida 
+2\. Failas, kuriame yra nurodyta funkcija, turi apibrėžimą "strict_type = 1", todėl ją kviečiant turėtų būti metama klaida 
 "fatal error" (funkcijos type hint yra int, o kviečiant paduodami string ir float tipų kintamieji).
  Tačiau kviečiant funkciją klaida nėra metama ir yra išspausdinamas int tipo rezultatas.
  Klaida nėra metama, kadangi funkcija yra iškviečiama iš kito failo, kuriame nėra įjungtas strict mode:
